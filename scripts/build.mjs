@@ -24,6 +24,9 @@ const CATEGORIES = [
   { slug: "ia", name: "IA et clients LLM", keyword: "llm", intro: "SDK et utilitaires pour intégrer des modèles de langage dans une application." },
 ];
 
+// Bloc newsletter : formulaire Google Forms (gratuit), intégré en iframe.
+const NEWSLETTER_HTML = `<section class="sponsor" aria-labelledby="nl"><h2 id="nl" style="margin-top:0">Recevoir la newsletter</h2><p class="muted">Une fois par semaine : les mouvements les plus marqués du classement npm. Désinscription à tout moment.</p><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNYEleTs4jS3D7CatAmPaOa3LRO2bX5qGf26YEQhL0EYZTlQ/viewform?embedded=true" width="100%" height="330" frameborder="0" marginheight="0" marginwidth="0" title="Inscription à la newsletter Radar npm" style="border:0;max-width:100%">Chargement du formulaire…</iframe></section>`;
+
 // Contact : page d'issues publique du dépôt (aucune adresse personnelle publiée).
 const CONTACT_URL = process.env.GITHUB_REPOSITORY
   ? `https://github.com/${process.env.GITHUB_REPOSITORY}/issues`
@@ -295,7 +298,7 @@ ${result.categories.map((cat) => `<h2><a href="${SITE_URL}${cat.slug}/" style="c
     title: "Radar npm : classement quotidien des paquets npm | Radar npm",
     description: "Classement quotidien des paquets npm les plus téléchargés par thème : générateurs de sites, tests, CLI, Markdown, graphiques, IA.",
     canonical: SITE_URL,
-    body: home,
+    body: home + NEWSLETTER_HTML,
     jsonLd: { "@context": "https://schema.org", "@type": "WebSite", name: "Radar npm", url: SITE_URL },
   }));
 
