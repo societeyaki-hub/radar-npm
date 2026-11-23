@@ -24,6 +24,11 @@ const CATEGORIES = [
   { slug: "ia", name: "IA et clients LLM", keyword: "llm", intro: "SDK et utilitaires pour intégrer des modèles de langage dans une application." },
 ];
 
+// Contact : page d'issues publique du dépôt (aucune adresse personnelle publiée).
+const CONTACT_URL = process.env.GITHUB_REPOSITORY
+  ? `https://github.com/${process.env.GITHUB_REPOSITORY}/issues`
+  : "https://github.com/societeyaki-hub/radar-npm/issues";
+
 const esc = (s = "") => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const fmt = (n) => (n ?? 0).toLocaleString("fr-FR");
 const todayISO = () => new Date().toISOString().slice(0, 10);
@@ -129,7 +134,7 @@ footer{margin:36px 0;color:var(--muted);font-size:.85rem;border-top:1px solid va
 <header><a href="${SITE_URL}">Radar npm</a> <span class="muted">· classement quotidien des paquets npm</span></header>
 ${body}
 <div class="sponsor">Cet annuaire est gratuit et mis à jour automatiquement chaque jour à partir du registre npm public. Les chiffres sont les téléchargements hebdomadaires tels que renvoyés par le registre npm.</div>
-<footer>Données : registre npm public (registry.npmjs.org). Dernière mise à jour : ${esc(todayISO())}. Ce site ne remplace pas la documentation officielle de chaque paquet.</footer>
+<footer><nav class="legal"><a href="${SITE_URL}a-propos/">À propos</a> · <a href="${SITE_URL}methodologie/">Méthodologie</a> · <a href="${SITE_URL}mentions-legales/">Mentions légales</a> · <a href="${SITE_URL}confidentialite/">Confidentialité</a> · <a href="${CONTACT_URL}">Contact</a></nav>Données : registre npm public (registry.npmjs.org). Dernière mise à jour : ${esc(todayISO())}. Ce site ne remplace pas la documentation officielle de chaque paquet.</footer>
 </div>
 </body>
 </html>`;
@@ -181,7 +186,41 @@ async function main() {
 
   await writeFile(path.join(DATA_DIR, "latest.json"), JSON.stringify(result, null, 2));
 
-  const sitemapUrls = [SITE_URL];
+  // Pages statiques : à propos, méthodologie, mentions légales, confidentialité.
+  const staticPages = [
+    { slug: "a-propos", title: "À propos de Radar npm", description: "Qui fait Radar npm, pourquoi il existe et comment il est financé.", body: `<h1>À propos de Radar npm</h1>
+<p>Radar npm est un annuaire gratuit qui classe chaque jour les paquets npm les plus téléchargés, par thème : générateurs de sites statiques, tests, outils en ligne de commande, Markdown, graphiques et clients IA.</p>
+<p>Le site est entièrement automatisé. Un script interroge le registre npm public une fois par jour, met à jour les classements et conserve un historique des téléchargements hebdomadaires. Aucune donnée personnelle des visiteurs n'est collectée par le site lui-même.</p>
+<p>Le projet est open source et hébergé gratuitement. Pour toute question ou correction, passe par la <a href="${CONTACT_URL}">page de contact</a>.</p>` },
+    { slug: "methodologie", title: "Méthodologie du classement", description: "Comment les paquets sont sélectionnés, classés et mis à jour.", body: `<h1>Méthodologie du classement</h1>
+<p><strong>Sélection.</strong> Pour chaque thème, le site interroge la recherche du registre npm avec un mot-clé (par exemple « testing » ou « cli »). Les paquets marqués comme dépréciés sont exclus. On garde les 15 premiers résultats renvoyés par le registre, qui tient compte de la popularité, de la qualité et de la maintenance.</p>
+<p><strong>Classement.</strong> Les paquets sont triés par nombre de téléchargements hebdomadaires tels que renvoyés par le registre npm. Ce n'est pas un classement de qualité : un paquet très téléchargé peut être ancien, ou tiré par d'autres dépendances.</p>
+<p><strong>Évolution.</strong> La variation affichée compare le total du jour à la dernière collecte enregistrée dans l'historique. Elle n'apparaît qu'à partir du deuxième jour de collecte.</p>
+<p><strong>Mise à jour.</strong> Les données sont recalculées chaque jour à 05:17 UTC par une tâche automatisée.</p>
+<p><strong>Limites.</strong> Les chiffres sont des indicateurs d'usage, pas des revenus ni des garanties. Consulte toujours la documentation officielle d'un paquet avant de l'adopter.</p>` },
+    { slug: "mentions-legales", title: "Mentions légales", description: "Éditeur, hébergement et propriété intellectuelle du site Radar npm.", body: `<h1>Mentions légales</h1>
+<p><strong>Éditeur.</strong> Radar npm est un projet personnel publié sous licence open source. Pour toute demande, utilise la <a href="${CONTACT_URL}">page de contact</a>.</p>
+<p><strong>Hébergement.</strong> Le site est hébergé par GitHub Pages (GitHub, Inc.).</p>
+<p><strong>Données.</strong> Les classements proviennent du registre npm public. Les noms, descriptions et liens renvoient vers les paquets d'origine. Les marques et noms de paquets restent la propriété de leurs auteurs.</p>
+<p><strong>Responsabilité.</strong> Les informations sont fournies telles quelles, sans garantie d'exactitude ou d'exhaustivité.</p>` },
+    { slug: "confidentialite", title: "Politique de confidentialité", description: "Quelles données sont collectées, par qui et pourquoi sur Radar npm.", body: `<h1>Politique de confidentialité</h1>
+<p>Radar npm ne demande aucun compte, ne collecte aucun formulaire et n'enregistre aucune donnée personnelle des visiteurs sur ses propres serveurs.</p>
+<p>Le site est hébergé par GitHub Pages, qui peut collecter les données techniques habituelles des serveurs web (adresse IP, navigateur) selon sa propre politique de confidentialité.</p>
+<p>Si des publicités ou des outils de mesure d'audience sont ajoutés à l'avenir, cette page sera mise à jour avant leur activation.</p>
+<p>Pour toute question, utilise la <a href="${CONTACT_URL}">page de contact</a>.</p>` },
+  ];
+  for (const p of staticPages) {
+    await mkdir(path.join(SITE_DIR, p.slug), { recursive: true });
+    await writeFile(path.join(SITE_DIR, p.slug, "index.html"), pageHTML({
+      title: `${p.title} | Radar npm`,
+      description: p.description,
+      canonical: `${SITE_URL}${p.slug}/`,
+      body: p.body,
+      jsonLd: { "@context": "https://schema.org", "@type": "WebPage", name: p.title, url: `${SITE_URL}${p.slug}/` },
+    }));
+  }
+
+  const sitemapUrls = [SITE_URL, ...staticPages.map((p) => `${SITE_URL}${p.slug}/`)];
   for (const cat of result.categories) {
     const body = `<h1>${esc(cat.name)}</h1>
 <p class="lead">${esc(cat.intro)} Classement des ${cat.items.length} paquets npm les plus utilisés sur ce thème, par téléchargements hebdomadaires.</p>

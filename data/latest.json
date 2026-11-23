@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T13:53:30.954Z",
+  "generated_at": "2026-11-23T13:58:53.546Z",
   "categories": [
     {
       "slug": "generateurs-de-sites",
@@ -482,6 +482,15 @@
           "weekly": 98615983
         },
         {
+          "name": "mdast-util-to-markdown",
+          "version": "2.2.4",
+          "description": "mdast utility to serialize markdown",
+          "url": "https://www.npmjs.com/package/mdast-util-to-markdown",
+          "updated": "2026-11-20T10:23:48.089Z",
+          "monthly": 366196212,
+          "weekly": 93268098
+        },
+        {
           "name": "mdast-util-to-hast",
           "version": "13.2.2",
           "description": "mdast utility to transform to hast",
@@ -543,15 +552,6 @@
           "updated": "2023-06-23T11:00:35.241Z",
           "monthly": 301406189,
           "weekly": 78705455
-        },
-        {
-          "name": "mdast-util-gfm-footnote",
-          "version": "2.1.0",
-          "description": "mdast extension to parse and serialize GFM footnotes",
-          "url": "https://www.npmjs.com/package/mdast-util-gfm-footnote",
-          "updated": "2025-02-10T11:52:23.193Z",
-          "monthly": 291961778,
-          "weekly": 76374013
         },
         {
           "name": "remark-stringify",

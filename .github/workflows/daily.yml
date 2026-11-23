@@ -3,6 +3,12 @@ name: Radar npm — mise à jour quotidienne
 on:
   schedule:
     - cron: "17 5 * * *"   # chaque jour à 05:17 UTC
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "site/**"
+      - ".github/workflows/daily.yml"
   workflow_dispatch: {}
 
 permissions:
