@@ -1,0 +1,39 @@
+name: Radar npm — infolettre hebdomadaire
+
+on:
+  schedule:
+    - cron: "30 7 * * 1"   # chaque lundi à 07:30 UTC, après la collecte quotidienne
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: radar-newsletter
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Construire l'édition et envoyer si les secrets sont présents
+        run: node scripts/newsletter.mjs
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
+          BREVO_SENDER_NAME: Radar npm
+          SEND_NEWSLETTER: "1"
+
+      - name: Conserver l'aperçu
+        uses: actions/upload-artifact@v4
+        with:
+          name: newsletter-preview
+          path: dist/newsletter.html
