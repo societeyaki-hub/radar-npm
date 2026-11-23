@@ -140,13 +140,16 @@ ${body}
 </html>`;
 }
 
+// Slug d'URL stable pour un paquet (gère les noms à scope : @scope/nom).
+const slugOf = (name) => name.replace(/^@/, "").replace(/\//g, "--").toLowerCase();
+
 function tableHTML(items, history, cat) {
   const rows = items.map((it, i) => {
     const t = trendFor(history, cat.slug, it.name, it.weekly);
     const trend = t == null ? `<span class="muted">—</span>` : `<span class="${t >= 0 ? "up" : "down"}">${t >= 0 ? "+" : ""}${t}&nbsp;%</span>`;
     return `<tr>
 <td class="num">${i + 1}</td>
-<td><a class="pkg" href="${esc(it.url)}" rel="noopener">${esc(it.name)}</a><div class="muted">${esc(it.description)}</div></td>
+<td><a class="pkg" href="${SITE_URL}paquets/${slugOf(it.name)}/">${esc(it.name)}</a> <a class="muted" href="${esc(it.url)}" rel="noopener">npm ↗</a><div class="muted">${esc(it.description)}</div></td>
 <td class="num">${it.weekly == null ? "—" : fmt(it.weekly)}</td>
 <td class="num">${trend}</td>
 <td class="num muted">${esc(it.version)}</td>
@@ -220,7 +223,51 @@ async function main() {
     }));
   }
 
-  const sitemapUrls = [SITE_URL, ...staticPages.map((p) => `${SITE_URL}${p.slug}/`)];
+  // Une fiche par paquet : téléchargements, historique et commande d'installation.
+  const rowsByPkg = new Map();
+  for (const line of (await readFile(path.join(DATA_DIR, "history.csv"), "utf8")).trim().split("\n").slice(1)) {
+    const [date, , name, weekly] = line.split(",");
+    if (!rowsByPkg.has(name)) rowsByPkg.set(name, []);
+    if (weekly !== "") rowsByPkg.get(name).push({ date, weekly: Number(weekly) });
+  }
+  const pkgUrls = [];
+  const seenPkgs = new Set();
+  for (const cat of result.categories) {
+    for (const it of cat.items) {
+      if (seenPkgs.has(it.name)) continue;
+      seenPkgs.add(it.name);
+      const slug = slugOf(it.name);
+      const hist = (rowsByPkg.get(it.name) || []).slice(-30);
+      const histRows = hist.length
+        ? `<table><thead><tr><th>Date</th><th>Téléch. / semaine</th></tr></thead><tbody>${hist.map((h) => `<tr><td>${esc(h.date)}</td><td class="num">${fmt(h.weekly)}</td></tr>`).join("")}</tbody></table>`
+        : `<p class="muted">Historique en cours de constitution : il apparaîtra après la deuxième collecte.</p>`;
+      const body = `<h1>${esc(it.name)}</h1>
+<p class="lead">${esc(it.description)}</p>
+<p><a class="pkg" href="${esc(it.url)}" rel="noopener">Voir la page npm du paquet ↗</a> · <a href="${SITE_URL}${cat.slug}/">Retour à « ${esc(cat.name)} »</a></p>
+<h2>Chiffres</h2>
+<table><tbody>
+<tr><th>Téléchargements / semaine</th><td class="num">${it.weekly == null ? "—" : fmt(it.weekly)}</td></tr>
+<tr><th>Téléchargements / mois</th><td class="num">${it.monthly == null ? "—" : fmt(it.monthly)}</td></tr>
+<tr><th>Version actuelle</th><td class="num">${esc(it.version)}</td></tr>
+<tr><th>Dernière publication</th><td class="num">${it.updated ? esc(String(it.updated).slice(0, 10)) : "—"}</td></tr>
+</tbody></table>
+<h2>Installation</h2>
+<pre><code>npm install ${esc(it.name)}</code></pre>
+<h2>Historique des téléchargements</h2>
+${histRows}`;
+      await mkdir(path.join(SITE_DIR, "paquets", slug), { recursive: true });
+      await writeFile(path.join(SITE_DIR, "paquets", slug, "index.html"), pageHTML({
+        title: `${it.name} : téléchargements npm | Radar npm`,
+        description: `${it.name} : ${it.weekly == null ? "" : fmt(it.weekly) + " téléchargements par semaine, "}version ${it.version}. ${it.description}`.slice(0, 300),
+        canonical: `${SITE_URL}paquets/${slug}/`,
+        body,
+        jsonLd: { "@context": "https://schema.org", "@type": "SoftwareApplication", name: it.name, description: it.description, applicationCategory: "DeveloperApplication", url: it.url },
+      }));
+      pkgUrls.push(`${SITE_URL}paquets/${slug}/`);
+    }
+  }
+
+  const sitemapUrls = [SITE_URL, ...staticPages.map((p) => `${SITE_URL}${p.slug}/`), ...pkgUrls];
   for (const cat of result.categories) {
     const body = `<h1>${esc(cat.name)}</h1>
 <p class="lead">${esc(cat.intro)} Classement des ${cat.items.length} paquets npm les plus utilisés sur ce thème, par téléchargements hebdomadaires.</p>
