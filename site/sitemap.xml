@@ -16,8 +16,8 @@
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/takazudo--zfb/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/takazudo--zfb-runtime/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/riebeckite--core/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/hugoblox/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/sourcey/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/takazudo--zfb-adapter-cloudflare/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/pagenary--publisher/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/typeroll--mcp-server/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/chai/</loc><lastmod>2026-11-24</lastmod></url>
@@ -33,7 +33,7 @@
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/jest-cli/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/jest--core/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/memfs/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/mswjs--interceptors/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/query-selector-shadow-dom/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/supertest/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/ansi-styles/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/commander/</loc><lastmod>2026-11-24</lastmod></url>
@@ -43,13 +43,13 @@
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/chalk/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/wrap-ansi/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/has-flag/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/yargs/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/argparse/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/cliui/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/picocolors/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/npm-run-path/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/tsx/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/ora/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/cli-spinners/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/ansis/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/listr2/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/marked/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/unist-util-visit/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/micromark/</loc><lastmod>2026-11-24</lastmod></url>
@@ -78,8 +78,8 @@
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/ag-charts-types/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/highcharts/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/ag-charts-community/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/visx--axis/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/echarts-for-react/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/ag-charts-core/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/ai/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/opentelemetry--instrumentation-openai/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/earendil-works--pi-ai/</loc><lastmod>2026-11-24</lastmod></url>
@@ -89,12 +89,12 @@
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/earendil-works--pi-coding-agent/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/langchain--openai/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/json-render--core/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/mastra--core/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/tanstack--ai/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/assistant-stream/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/agents/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/toon-format--toon/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/hyparquet-writer/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/ollama-ai-provider-v2/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://societeyaki-hub.github.io/radar-npm/paquets/langchain--classic/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/generateurs-de-sites/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/tests/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://societeyaki-hub.github.io/radar-npm/cli/</loc><lastmod>2026-11-24</lastmod></url>

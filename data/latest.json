@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T11:40:51.639Z",
+  "generated_at": "2026-11-24T15:50:29.234Z",
   "categories": [
     {
       "slug": "generateurs-de-sites",
@@ -107,6 +107,15 @@
           "weekly": 3512
         },
         {
+          "name": "hugoblox",
+          "version": "0.12.8",
+          "description": "The official CLI for creating and managing HugoBlox sites.",
+          "url": "https://www.npmjs.com/package/hugoblox",
+          "updated": "2026-04-03T23:30:24.811Z",
+          "monthly": 12601,
+          "weekly": 2564
+        },
+        {
           "name": "sourcey",
           "version": "3.9.5",
           "description": "Precision documentation from OpenAPI, MCP, Doxygen, godoc, rustdoc, and Markdown. Static HTML you own.",
@@ -114,15 +123,6 @@
           "updated": "2026-11-08T14:51:56.339Z",
           "monthly": 11827,
           "weekly": 2496
-        },
-        {
-          "name": "@takazudo/zfb-adapter-cloudflare",
-          "version": "7.2.0",
-          "description": "Content-site engine on the web's Request/Response model — prerender to static HTML, serve on Cloudflare Workers, or run as a local content server inside your app. One Rust binary. Cloudflare adapter: Workers Static Assets (Pages-compatible).",
-          "url": "https://www.npmjs.com/package/@takazudo/zfb-adapter-cloudflare",
-          "updated": "2026-11-24T06:48:44.223Z",
-          "monthly": 12012,
-          "weekly": 2249
         },
         {
           "name": "@pagenary/publisher",
@@ -268,13 +268,13 @@
           "weekly": 54987111
         },
         {
-          "name": "@mswjs/interceptors",
-          "version": "0.45.12",
-          "description": "Low-level network interception library for Node.js.",
-          "url": "https://www.npmjs.com/package/@mswjs/interceptors",
-          "updated": "2026-11-11T02:39:15.185Z",
-          "monthly": 151351874,
-          "weekly": 37978838
+          "name": "query-selector-shadow-dom",
+          "version": "1.0.1",
+          "description": "use querySelector syntax to search for nodes inside of (nested) shadow roots",
+          "url": "https://www.npmjs.com/package/query-selector-shadow-dom",
+          "updated": "2022-11-17T18:31:49.715Z",
+          "monthly": 103739389,
+          "weekly": 27252810
         },
         {
           "name": "supertest",
@@ -366,24 +366,6 @@
           "weekly": 416704132
         },
         {
-          "name": "yargs",
-          "version": "18.2.0",
-          "description": "yargs the modern, pirate-themed, successor to optimist.",
-          "url": "https://www.npmjs.com/package/yargs",
-          "updated": "2026-09-20T22:34:11.798Z",
-          "monthly": 1569159129,
-          "weekly": 393206605
-        },
-        {
-          "name": "argparse",
-          "version": "3.0.4",
-          "description": "CLI arguments parser. Native port of python's argparse.",
-          "url": "https://www.npmjs.com/package/argparse",
-          "updated": "2026-10-24T07:16:22.794Z",
-          "monthly": 1557575967,
-          "weekly": 383226838
-        },
-        {
           "name": "cliui",
           "version": "9.0.1",
           "description": "easily create complex multi-column command-line-interfaces",
@@ -400,6 +382,15 @@
           "updated": "2024-10-16T18:20:03.921Z",
           "monthly": 1432864250,
           "weekly": 356419258
+        },
+        {
+          "name": "npm-run-path",
+          "version": "6.0.0",
+          "description": "Get your PATH prepended with locally installed binaries",
+          "url": "https://www.npmjs.com/package/npm-run-path",
+          "updated": "2024-08-26T08:40:09.814Z",
+          "monthly": 924014403,
+          "weekly": 226555926
         },
         {
           "name": "tsx",
@@ -420,13 +411,22 @@
           "weekly": 140087029
         },
         {
-          "name": "cli-spinners",
-          "version": "3.4.0",
-          "description": "Spinners for use in the terminal",
-          "url": "https://www.npmjs.com/package/cli-spinners",
-          "updated": "2026-01-13T15:09:46.171Z",
-          "monthly": 498049599,
-          "weekly": 123513479
+          "name": "ansis",
+          "version": "4.5.0",
+          "description": "ANSI color lib",
+          "url": "https://www.npmjs.com/package/ansis",
+          "updated": "2026-11-01T21:05:38.561Z",
+          "monthly": 248665147,
+          "weekly": 65852664
+        },
+        {
+          "name": "listr2",
+          "version": "11.4.1",
+          "description": "Terminal task list reborn! Create beautiful CLI interfaces via easy and logical to implement task lists that feel alive and interactive.",
+          "url": "https://www.npmjs.com/package/listr2",
+          "updated": "2026-11-09T13:14:31.321Z",
+          "monthly": 230513827,
+          "weekly": 57072801
         }
       ]
     },
@@ -697,6 +697,15 @@
           "weekly": 2582171
         },
         {
+          "name": "@visx/axis",
+          "version": "4.0.0",
+          "description": "visx axis",
+          "url": "https://www.npmjs.com/package/@visx/axis",
+          "updated": "2026-06-11T21:39:33.655Z",
+          "monthly": 9925160,
+          "weekly": 2421405
+        },
+        {
           "name": "echarts-for-react",
           "version": "3.1.0",
           "description": " Apache Echarts components for React.",
@@ -704,15 +713,6 @@
           "updated": "2026-11-17T11:25:42.928Z",
           "monthly": 9073096,
           "weekly": 2233425
-        },
-        {
-          "name": "ag-charts-core",
-          "version": "14.3.0",
-          "description": "Advanced Charting / Charts supporting Javascript / Typescript / React / Angular / Vue",
-          "url": "https://www.npmjs.com/package/ag-charts-core",
-          "updated": "2026-11-04T08:42:26.227Z",
-          "monthly": 9463889,
-          "weekly": 2180371
         }
       ]
     },
@@ -804,13 +804,13 @@
           "weekly": 4328397
         },
         {
-          "name": "@mastra/core",
-          "version": "1.85.0",
-          "description": "Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
-          "url": "https://www.npmjs.com/package/@mastra/core",
-          "updated": "2026-11-18T15:14:26.764Z",
-          "monthly": 13988278,
-          "weekly": 3993686
+          "name": "@tanstack/ai",
+          "version": "1.8.0",
+          "description": "Type-safe TypeScript AI SDK for streaming chat, tool calling, agents, structured outputs, and multimodal generation.",
+          "url": "https://www.npmjs.com/package/@tanstack/ai",
+          "updated": "2026-11-20T13:37:53.725Z",
+          "monthly": 10878942,
+          "weekly": 4128223
         },
         {
           "name": "assistant-stream",
@@ -840,15 +840,6 @@
           "weekly": 2735468
         },
         {
-          "name": "hyparquet-writer",
-          "version": "0.18.0",
-          "description": "Parquet file writer for JavaScript",
-          "url": "https://www.npmjs.com/package/hyparquet-writer",
-          "updated": "2026-10-29T06:01:47.840Z",
-          "monthly": 5685970,
-          "weekly": 1530690
-        },
-        {
           "name": "ollama-ai-provider-v2",
           "version": "4.1.0",
           "description": "Use Ollama with the Vercel AI SDK, implementing the official Ollama API. This provider has minimal dependencies and is web-compatible out of the box.",
@@ -856,6 +847,15 @@
           "updated": "2026-10-22T14:40:51.722Z",
           "monthly": 5151553,
           "weekly": 1183183
+        },
+        {
+          "name": "@langchain/classic",
+          "version": "1.0.62",
+          "description": "Old abstractions from LangChain.js",
+          "url": "https://www.npmjs.com/package/@langchain/classic",
+          "updated": "2026-11-20T18:55:24.771Z",
+          "monthly": 2976544,
+          "weekly": 721458
         }
       ]
     }
