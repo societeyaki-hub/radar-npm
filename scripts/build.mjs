@@ -25,7 +25,7 @@ const CATEGORIES = [
 ];
 
 // Bloc newsletter : formulaire Google Forms (gratuit), intégré en iframe.
-const NEWSLETTER_HTML = `<section class="sponsor" aria-labelledby="nl"><h2 id="nl" style="margin-top:0">Recevoir la newsletter</h2><p class="muted">Une fois par semaine : les mouvements les plus marqués du classement npm. Désinscription à tout moment.</p><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNYEleTs4jS3D7CatAmPaOa3LRO2bX5qGf26YEQhL0EYZTlQ/viewform?embedded=true" width="100%" height="330" frameborder="0" marginheight="0" marginwidth="0" title="Inscription à la newsletter Radar npm" style="border:0;max-width:100%">Chargement du formulaire…</iframe></section>`;
+const NEWSLETTER_HTML = `<section class="sponsor" aria-labelledby="nl"><h2 id="nl" style="margin-top:0">Recevoir la newsletter</h2><p class="muted">Une fois par semaine : les mouvements les plus marqués du classement npm. Désinscription à tout moment.</p><iframe src="https://96173b0d.sibforms.com/v2/serve/MUIFAJupJnel0VNOPr70G1uNoyJWKcUJ0wEOJJjD86b2o8ChFpVMO1lVlJetiZJsIgpaHpwFFG-FMt_OaoxzY9_lG8MjF8znX5qF_0UbMEIemBvWBcAKdDB7H0y1NVUE1tXv1JAU78GXJPb5WaevUm8DF8e0obqEKZXkOjQrp7Cj5gcVz4L3pg7MOGqD10eLJHcFByAA9BgwcOnVFQ==" width="100%" height="420" frameborder="0" scrolling="auto" title="Inscription à la newsletter Radar npm" style="display:block;border:0;max-width:100%">Chargement du formulaire…</iframe></section>`;
 
 // Contact : page d'issues publique du dépôt (aucune adresse personnelle publiée).
 const CONTACT_URL = process.env.GITHUB_REPOSITORY
