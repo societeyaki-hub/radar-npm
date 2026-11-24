@@ -81,11 +81,11 @@ ${hasTrend && fallers.length ? `<h2 style="font-size:17px;margin:24px 0 8px">En 
 <p style="margin:28px 0 0"><a href="${SITE_URL}" style="color:#0f766e;font-weight:600">Voir le classement complet</a></p>
 <hr style="border:0;border-top:1px solid #e7e5e4;margin:28px 0">
 <p style="color:#57534e;font-size:13px">Tu reçois ce message parce que tu t'es inscrit à la newsletter Radar npm. Les chiffres sont les téléchargements hebdomadaires renvoyés par le registre npm. Pour toute question : <a href="${CONTACT_URL}" style="color:#0f766e">contact</a>.</p>
-{{UNSUBSCRIBE}}
+<p style="font-size:13px;color:#57534e;margin:8px 0 0"><a href="{{ unsubscribe }}" style="color:#57534e">Se désinscrire</a></p>
 </div></body></html>`;
 
 await mkdir(path.join(ROOT, "dist"), { recursive: true });
-await writeFile(path.join(ROOT, "dist", "newsletter.html"), html.replace("{{UNSUBSCRIBE}}", ""));
+await writeFile(path.join(ROOT, "dist", "newsletter.html"), html);
 console.log(`Aperçu écrit : dist/newsletter.html (${hasTrend ? moves.length + " paquets avec tendance" : "pas encore de tendance : une semaine de données manque"})`);
 
 const { BREVO_API_KEY, BREVO_LIST_ID, BREVO_SENDER_EMAIL, BREVO_SENDER_NAME, SEND_NEWSLETTER } = process.env;
@@ -103,7 +103,7 @@ const create = await fetch("https://api.brevo.com/v3/emailCampaigns", {
     subject,
     previewText: preheader,
     sender: { name: BREVO_SENDER_NAME || "Radar npm", email: BREVO_SENDER_EMAIL },
-    htmlContent: html.replace("{{UNSUBSCRIBE}}", ""),
+    htmlContent: html,
     recipients: { listIds: [Number(BREVO_LIST_ID)] },
   }),
 });
