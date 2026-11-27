@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T15:08:12.615Z",
+  "generated_at": "2026-11-27T14:59:50.067Z",
   "categories": [
     {
       "slug": "generateurs-de-sites",
@@ -13,8 +13,8 @@
           "description": "A simpler static site generator.",
           "url": "https://www.npmjs.com/package/@11ty/eleventy",
           "updated": "2026-11-03T15:58:04.113Z",
-          "monthly": 1232365,
-          "weekly": 271910
+          "monthly": 1229366,
+          "weekly": 268038
         },
         {
           "name": "@netlify/framework-info",
@@ -22,8 +22,8 @@
           "description": "Framework detection utility",
           "url": "https://www.npmjs.com/package/@netlify/framework-info",
           "updated": "2025-06-10T19:15:59.726Z",
-          "monthly": 491726,
-          "weekly": 120072
+          "monthly": 493913,
+          "weekly": 116251
         },
         {
           "name": "@builder.io/qwik",
@@ -40,26 +40,26 @@
           "description": "Generate LLM-friendly llms.txt files from markdown and MDX content files",
           "url": "https://www.npmjs.com/package/get-llms-txt",
           "updated": "2026-11-21T17:49:52.740Z",
-          "monthly": 94739,
-          "weekly": 32406
+          "monthly": 96983,
+          "weekly": 30100
         },
         {
           "name": "@docmd/core",
-          "version": "0.10.1",
+          "version": "0.10.2",
           "description": "Documentation compiler for humans and machines. One Markdown source, one command — generates website, search, AI context, and knowledge formats together.",
           "url": "https://www.npmjs.com/package/@docmd/core",
-          "updated": "2026-11-16T17:55:54.699Z",
-          "monthly": 108269,
-          "weekly": 21094
+          "updated": "2026-11-26T20:41:40.022Z",
+          "monthly": 109001,
+          "weekly": 20806
         },
         {
           "name": "@docmd/api",
-          "version": "0.10.1",
+          "version": "0.10.2",
           "description": "Public API, plugin contracts, and hook interfaces for the docmd documentation engine.",
           "url": "https://www.npmjs.com/package/@docmd/api",
-          "updated": "2026-11-16T17:54:49.581Z",
-          "monthly": 106541,
-          "weekly": 20575
+          "updated": "2026-11-26T20:41:13.091Z",
+          "monthly": 107327,
+          "weekly": 20246
         },
         {
           "name": "@qwik.dev/core",
@@ -67,8 +67,8 @@
           "description": "An open source framework for building instant loading web apps at any scale, without the extra effort.",
           "url": "https://www.npmjs.com/package/@qwik.dev/core",
           "updated": "2026-11-09T15:48:04.913Z",
-          "monthly": 53183,
-          "weekly": 10715
+          "monthly": 52462,
+          "weekly": 10926
         },
         {
           "name": "devjar",
@@ -85,8 +85,8 @@
           "description": "Content-site engine on the web's Request/Response model — prerender to static HTML, serve on Cloudflare Workers, or run as a local content server inside your app. One Rust binary. SDK with islands, content collections, pagination, and config helpers.",
           "url": "https://www.npmjs.com/package/@takazudo/zfb",
           "updated": "2026-11-24T06:50:14.587Z",
-          "monthly": 21182,
-          "weekly": 4073
+          "monthly": 20447,
+          "weekly": 4129
         },
         {
           "name": "@takazudo/zfb-runtime",
@@ -99,12 +99,30 @@
         },
         {
           "name": "@riebeckite/core",
-          "version": "0.3.0",
+          "version": "0.3.2",
           "description": "Core content pipeline, configuration, and extension APIs for Riebeckite.",
           "url": "https://www.npmjs.com/package/@riebeckite/core",
-          "updated": "2026-11-25T14:31:32.089Z",
-          "monthly": 22069,
-          "weekly": 2566
+          "updated": "2026-11-27T08:07:09.571Z",
+          "monthly": 22962,
+          "weekly": 3567
+        },
+        {
+          "name": "hugoblox",
+          "version": "0.12.8",
+          "description": "The official CLI for creating and managing HugoBlox sites.",
+          "url": "https://www.npmjs.com/package/hugoblox",
+          "updated": "2026-04-03T23:30:24.811Z",
+          "monthly": 12601,
+          "weekly": 2564
+        },
+        {
+          "name": "sourcey",
+          "version": "3.9.5",
+          "description": "Precision documentation from OpenAPI, MCP, Doxygen, godoc, rustdoc, and Markdown. Static HTML you own.",
+          "url": "https://www.npmjs.com/package/sourcey",
+          "updated": "2026-11-08T14:51:56.339Z",
+          "monthly": 11827,
+          "weekly": 2496
         },
         {
           "name": "@takazudo/zfb-adapter-cloudflare",
@@ -116,31 +134,13 @@
           "weekly": 2249
         },
         {
-          "name": "@pagenary/publisher",
-          "version": "2026.9.1",
-          "description": "Multi-tenant documentation static site generator with Markdown, search, SEO snapshots, and docs-as-code publishing.",
-          "url": "https://www.npmjs.com/package/@pagenary/publisher",
-          "updated": "2026-09-09T03:35:07.309Z",
-          "monthly": 12881,
-          "weekly": 2233
-        },
-        {
           "name": "@typeroll/mcp-server",
-          "version": "0.45.151",
+          "version": "0.45.152",
           "description": "Typeroll CMS MCP server – connect AI agents to the REST API to manage content and publish static websites.",
           "url": "https://www.npmjs.com/package/@typeroll/mcp-server",
-          "updated": "2026-11-23T17:15:06.525Z",
-          "monthly": 16919,
-          "weekly": 1950
-        },
-        {
-          "name": "dogsbay",
-          "version": "0.2.0-beta.186",
-          "description": "CLI for Dogsbay — scaffold, build, and serve documentation sites with markdown / MkDocs / Obsidian / OpenAPI sources",
-          "url": "https://www.npmjs.com/package/dogsbay",
-          "updated": "2026-11-25T17:02:29.277Z",
-          "monthly": 9792,
-          "weekly": 1149
+          "updated": "2026-11-26T22:34:37.632Z",
+          "monthly": 16224,
+          "weekly": 1714
         }
       ]
     },
@@ -165,8 +165,8 @@
           "description": "[![CI](https://github.com/mmkal/expect-type/actions/workflows/ci.yml/badge.svg)](https://github.com/mmkal/expect-type/actions/workflows/ci.yml) ![npm](https://img.shields.io/npm/dt/expect-type) [![X Follow](https://img.shields.io/twitter/follow/mmkal)](ht",
           "url": "https://www.npmjs.com/package/expect-type",
           "updated": "2026-06-25T13:41:23.573Z",
-          "monthly": 692723770,
-          "weekly": 168690955
+          "monthly": 694797104,
+          "weekly": 161147756
         },
         {
           "name": "@testing-library/dom",
@@ -183,8 +183,8 @@
           "description": "Accessibility engine for automated Web UI testing",
           "url": "https://www.npmjs.com/package/axe-core",
           "updated": "2026-11-16T11:56:28.504Z",
-          "monthly": 495839918,
-          "weekly": 120682499
+          "monthly": 495659689,
+          "weekly": 114945441
         },
         {
           "name": "@testing-library/jest-dom",
@@ -192,8 +192,8 @@
           "description": "Custom jest matchers to test the state of the DOM",
           "url": "https://www.npmjs.com/package/@testing-library/jest-dom",
           "updated": "2026-11-19T03:09:34.583Z",
-          "monthly": 424784312,
-          "weekly": 103888886
+          "monthly": 424970625,
+          "weekly": 99085729
         },
         {
           "name": "@testing-library/react",
@@ -201,8 +201,8 @@
           "description": "Simple and complete React DOM testing utilities that encourage good testing practices.",
           "url": "https://www.npmjs.com/package/@testing-library/react",
           "updated": "2026-08-27T17:41:18.735Z",
-          "monthly": 412056685,
-          "weekly": 100220639
+          "monthly": 413567693,
+          "weekly": 98790309
         },
         {
           "name": "@testing-library/user-event",
@@ -210,17 +210,8 @@
           "description": "Fire events the same way the user does",
           "url": "https://www.npmjs.com/package/@testing-library/user-event",
           "updated": "2026-11-18T23:59:54.641Z",
-          "monthly": 380803176,
-          "weekly": 93796704
-        },
-        {
-          "name": "deep-eql",
-          "version": "5.0.2",
-          "description": "Improved deep equality testing for Node.js and the browser.",
-          "url": "https://www.npmjs.com/package/deep-eql",
-          "updated": "2024-06-03T08:03:16.644Z",
-          "monthly": 328885366,
-          "weekly": 77406647
+          "monthly": 381376517,
+          "weekly": 89245832
         },
         {
           "name": "fast-check",
@@ -232,22 +223,22 @@
           "weekly": 75434322
         },
         {
+          "name": "deep-eql",
+          "version": "5.0.2",
+          "description": "Improved deep equality testing for Node.js and the browser.",
+          "url": "https://www.npmjs.com/package/deep-eql",
+          "updated": "2024-06-03T08:03:16.644Z",
+          "monthly": 327297623,
+          "weekly": 74361082
+        },
+        {
           "name": "jest",
           "version": "30.5.2",
           "description": "Delightful JavaScript Testing.",
           "url": "https://www.npmjs.com/package/jest",
           "updated": "2026-09-18T13:58:07.141Z",
-          "monthly": 268193853,
-          "weekly": 63026520
-        },
-        {
-          "name": "@jest/core",
-          "version": "30.5.2",
-          "description": "Delightful JavaScript Testing.",
-          "url": "https://www.npmjs.com/package/@jest/core",
-          "updated": "2026-09-18T13:57:12.315Z",
-          "monthly": 263187080,
-          "weekly": 61793503
+          "monthly": 268136870,
+          "weekly": 62119518
         },
         {
           "name": "jest-cli",
@@ -259,13 +250,22 @@
           "weekly": 61402059
         },
         {
+          "name": "@jest/core",
+          "version": "30.5.2",
+          "description": "Delightful JavaScript Testing.",
+          "url": "https://www.npmjs.com/package/@jest/core",
+          "updated": "2026-09-18T13:57:12.315Z",
+          "monthly": 261401673,
+          "weekly": 58735353
+        },
+        {
           "name": "memfs",
           "version": "4.80.1",
           "description": "In-memory file-system with Node's fs API.",
           "url": "https://www.npmjs.com/package/memfs",
           "updated": "2026-11-12T20:59:47.404Z",
-          "monthly": 230429582,
-          "weekly": 54305920
+          "monthly": 230360871,
+          "weekly": 53480896
         },
         {
           "name": "@mswjs/interceptors",
@@ -273,8 +273,8 @@
           "description": "Low-level network interception library for Node.js.",
           "url": "https://www.npmjs.com/package/@mswjs/interceptors",
           "updated": "2026-11-26T04:47:29.122Z",
-          "monthly": 156034879,
-          "weekly": 37879170
+          "monthly": 156220683,
+          "weekly": 36090189
         },
         {
           "name": "msw",
@@ -282,8 +282,8 @@
           "description": "The industry standard for API mocking in JavaScript.",
           "url": "https://www.npmjs.com/package/msw",
           "updated": "2026-11-26T01:15:45.559Z",
-          "monthly": 147847728,
-          "weekly": 35924582
+          "monthly": 148139109,
+          "weekly": 34367006
         }
       ]
     },
@@ -299,8 +299,8 @@
           "description": "ANSI escape codes for styling strings in the terminal",
           "url": "https://www.npmjs.com/package/ansi-styles",
           "updated": "2026-07-26T14:57:36.835Z",
-          "monthly": 4007970413,
-          "weekly": 942043171
+          "monthly": 3995077527,
+          "weekly": 905634665
         },
         {
           "name": "commander",
@@ -308,8 +308,8 @@
           "description": "the complete solution for node.js command-line programs",
           "url": "https://www.npmjs.com/package/commander",
           "updated": "2026-11-07T01:27:22.311Z",
-          "monthly": 3262569682,
-          "weekly": 782364427
+          "monthly": 3257755241,
+          "weekly": 747359901
         },
         {
           "name": "string-width",
@@ -317,8 +317,8 @@
           "description": "Get the visual width of a string - the number of columns required to display it",
           "url": "https://www.npmjs.com/package/string-width",
           "updated": "2026-11-11T16:32:37.637Z",
-          "monthly": 3126272846,
-          "weekly": 734221059
+          "monthly": 3115684521,
+          "weekly": 706476942
         },
         {
           "name": "ansi-regex",
@@ -326,8 +326,8 @@
           "description": "Regular expression for matching ANSI escape codes",
           "url": "https://www.npmjs.com/package/ansi-regex",
           "updated": "2026-11-08T11:31:30.760Z",
-          "monthly": 2995550292,
-          "weekly": 705930487
+          "monthly": 2988751595,
+          "weekly": 679034275
         },
         {
           "name": "supports-color",
@@ -335,8 +335,8 @@
           "description": "Detect whether a terminal supports color",
           "url": "https://www.npmjs.com/package/supports-color",
           "updated": "2026-07-26T15:13:36.815Z",
-          "monthly": 2889935274,
-          "weekly": 680758408
+          "monthly": 2881115542,
+          "weekly": 654168490
         },
         {
           "name": "chalk",
@@ -353,8 +353,8 @@
           "description": "Wordwrap a string with ANSI escape codes",
           "url": "https://www.npmjs.com/package/wrap-ansi",
           "updated": "2026-09-21T04:09:32.260Z",
-          "monthly": 2626648089,
-          "weekly": 614868580
+          "monthly": 2614765942,
+          "weekly": 589816085
         },
         {
           "name": "has-flag",
@@ -362,8 +362,8 @@
           "description": "Check if argv has a specific flag",
           "url": "https://www.npmjs.com/package/has-flag",
           "updated": "2021-07-19T17:30:54.122Z",
-          "monthly": 1765906136,
-          "weekly": 415007699
+          "monthly": 1759794281,
+          "weekly": 397528243
         },
         {
           "name": "yargs-parser",
@@ -371,8 +371,8 @@
           "description": "the mighty option parser used by yargs",
           "url": "https://www.npmjs.com/package/yargs-parser",
           "updated": "2025-05-26T20:12:00.864Z",
-          "monthly": 1645883222,
-          "weekly": 392055142
+          "monthly": 1649515976,
+          "weekly": 388028462
         },
         {
           "name": "yargs",
@@ -380,8 +380,8 @@
           "description": "yargs the modern, pirate-themed, successor to optimist.",
           "url": "https://www.npmjs.com/package/yargs",
           "updated": "2026-09-20T22:34:11.798Z",
-          "monthly": 1644214795,
-          "weekly": 391430627
+          "monthly": 1647709452,
+          "weekly": 387522410
         },
         {
           "name": "argparse",
@@ -389,8 +389,8 @@
           "description": "CLI arguments parser. Native port of python's argparse.",
           "url": "https://www.npmjs.com/package/argparse",
           "updated": "2026-10-24T07:16:22.794Z",
-          "monthly": 1595103331,
-          "weekly": 381543959
+          "monthly": 1594166805,
+          "weekly": 365599084
         },
         {
           "name": "cliui",
@@ -398,8 +398,8 @@
           "description": "easily create complex multi-column command-line-interfaces",
           "url": "https://www.npmjs.com/package/cliui",
           "updated": "2025-03-17T02:36:25.499Z",
-          "monthly": 1535375244,
-          "weekly": 365440615
+          "monthly": 1533945673,
+          "weekly": 352427807
         },
         {
           "name": "picocolors",
@@ -407,8 +407,8 @@
           "description": "The tiniest and the fastest library for terminal output formatting with ANSI colors",
           "url": "https://www.npmjs.com/package/picocolors",
           "updated": "2024-10-16T18:20:03.921Z",
-          "monthly": 1467367532,
-          "weekly": 349665133
+          "monthly": 1465221193,
+          "weekly": 340492526
         },
         {
           "name": "npm-run-path",
@@ -416,17 +416,17 @@
           "description": "Get your PATH prepended with locally installed binaries",
           "url": "https://www.npmjs.com/package/npm-run-path",
           "updated": "2024-08-26T08:40:09.814Z",
-          "monthly": 947753357,
-          "weekly": 225527050
+          "monthly": 944245115,
+          "weekly": 214553054
         },
         {
-          "name": "restore-cursor",
-          "version": "5.1.0",
-          "description": "Gracefully restore the CLI cursor on exit",
-          "url": "https://www.npmjs.com/package/restore-cursor",
-          "updated": "2024-07-26T13:56:42.169Z",
-          "monthly": 756467231,
-          "weekly": 176289464
+          "name": "slice-ansi",
+          "version": "10.0.1",
+          "description": "Slice a string with ANSI escape codes",
+          "url": "https://www.npmjs.com/package/slice-ansi",
+          "updated": "2026-11-08T18:04:33.842Z",
+          "monthly": 670695223,
+          "weekly": 150666793
         }
       ]
     },
@@ -451,8 +451,8 @@
           "description": "unist utility to visit nodes",
           "url": "https://www.npmjs.com/package/unist-util-visit",
           "updated": "2026-10-24T18:44:36.789Z",
-          "monthly": 462704419,
-          "weekly": 112827252
+          "monthly": 464244768,
+          "weekly": 108312889
         },
         {
           "name": "mdast-util-to-string",
@@ -460,8 +460,8 @@
           "description": "mdast utility to get the plain text content of a node",
           "url": "https://www.npmjs.com/package/mdast-util-to-string",
           "updated": "2023-07-07T16:19:50.488Z",
-          "monthly": 403932097,
-          "weekly": 95920564
+          "monthly": 403040155,
+          "weekly": 92752848
         },
         {
           "name": "mdast-util-to-hast",
@@ -471,15 +471,6 @@
           "updated": "2026-11-13T12:35:32.398Z",
           "monthly": 365374122,
           "weekly": 87376866
-        },
-        {
-          "name": "mdast-util-phrasing",
-          "version": "4.1.0",
-          "description": "mdast utility to check if a node is phrasing content",
-          "url": "https://www.npmjs.com/package/mdast-util-phrasing",
-          "updated": "2024-02-01T10:26:42.249Z",
-          "monthly": 353929797,
-          "weekly": 84354713
         },
         {
           "name": "micromark-extension-gfm-table",
@@ -500,6 +491,24 @@
           "weekly": 81664236
         },
         {
+          "name": "mdast-util-phrasing",
+          "version": "4.1.0",
+          "description": "mdast utility to check if a node is phrasing content",
+          "url": "https://www.npmjs.com/package/mdast-util-phrasing",
+          "updated": "2024-02-01T10:26:42.249Z",
+          "monthly": 353251543,
+          "weekly": 81637242
+        },
+        {
+          "name": "mdast-util-find-and-replace",
+          "version": "3.0.5",
+          "description": "mdast utility to find and replace text in a tree",
+          "url": "https://www.npmjs.com/package/mdast-util-find-and-replace",
+          "updated": "2026-11-20T09:55:41.325Z",
+          "monthly": 321803150,
+          "weekly": 78904872
+        },
+        {
           "name": "mdast-util-gfm-table",
           "version": "2.0.1",
           "description": "mdast extension to parse and serialize GFM tables",
@@ -507,15 +516,6 @@
           "updated": "2026-11-03T20:05:09.360Z",
           "monthly": 322000728,
           "weekly": 78904019
-        },
-        {
-          "name": "mdast-util-gfm-task-list-item",
-          "version": "2.0.1",
-          "description": "mdast extension to parse and serialize GFM task list items",
-          "url": "https://www.npmjs.com/package/mdast-util-gfm-task-list-item",
-          "updated": "2026-11-06T12:06:37.571Z",
-          "monthly": 319829890,
-          "weekly": 78434910
         },
         {
           "name": "mdast-util-gfm-autolink-literal",
@@ -541,8 +541,8 @@
           "description": "micromark extension to support GFM tagfilter",
           "url": "https://www.npmjs.com/package/micromark-extension-gfm-tagfilter",
           "updated": "2023-06-23T11:00:35.241Z",
-          "monthly": 314965518,
-          "weekly": 77089474
+          "monthly": 314910443,
+          "weekly": 74639801
         },
         {
           "name": "mdast-util-gfm-footnote",
@@ -550,8 +550,8 @@
           "description": "mdast extension to parse and serialize GFM footnotes",
           "url": "https://www.npmjs.com/package/mdast-util-gfm-footnote",
           "updated": "2025-02-10T11:52:23.193Z",
-          "monthly": 305093217,
-          "weekly": 74806159
+          "monthly": 305065616,
+          "weekly": 72430600
         },
         {
           "name": "remark-rehype",
@@ -559,8 +559,8 @@
           "description": "remark plugin that turns markdown into HTML to support rehype",
           "url": "https://www.npmjs.com/package/remark-rehype",
           "updated": "2025-04-02T13:46:59.156Z",
-          "monthly": 311101678,
-          "weekly": 74703565
+          "monthly": 311373574,
+          "weekly": 71136767
         },
         {
           "name": "mdast-util-mdx-jsx",
@@ -568,8 +568,8 @@
           "description": "mdast extension to parse and serialize MDX or MDX.js JSX",
           "url": "https://www.npmjs.com/package/mdast-util-mdx-jsx",
           "updated": "2026-11-20T10:16:15.101Z",
-          "monthly": 293528024,
-          "weekly": 71052539
+          "monthly": 294143009,
+          "weekly": 67639481
         }
       ]
     },
@@ -585,17 +585,8 @@
           "description": "Simple HTML5 charts using the canvas element.",
           "url": "https://www.npmjs.com/package/chart.js",
           "updated": "2026-11-23T19:22:58.868Z",
-          "monthly": 74376441,
-          "weekly": 17920925
-        },
-        {
-          "name": "@visx/shape",
-          "version": "4.0.0",
-          "description": "visx shape",
-          "url": "https://www.npmjs.com/package/@visx/shape",
-          "updated": "2026-06-11T21:39:08.829Z",
-          "monthly": 47026349,
-          "weekly": 11460467
+          "monthly": 74506745,
+          "weekly": 17686941
         },
         {
           "name": "@visx/group",
@@ -607,15 +598,6 @@
           "weekly": 11397067
         },
         {
-          "name": "@visx/scale",
-          "version": "4.0.0",
-          "description": "visx scale",
-          "url": "https://www.npmjs.com/package/@visx/scale",
-          "updated": "2026-06-11T21:38:36.669Z",
-          "monthly": 47930268,
-          "weekly": 11337286
-        },
-        {
           "name": "echarts",
           "version": "6.1.0",
           "description": "Apache ECharts is a powerful, interactive charting and data visualization library for browser",
@@ -625,13 +607,31 @@
           "weekly": 11203217
         },
         {
+          "name": "@visx/scale",
+          "version": "4.0.0",
+          "description": "visx scale",
+          "url": "https://www.npmjs.com/package/@visx/scale",
+          "updated": "2026-06-11T21:38:36.669Z",
+          "monthly": 47885662,
+          "weekly": 10964722
+        },
+        {
+          "name": "@visx/shape",
+          "version": "4.0.0",
+          "description": "visx shape",
+          "url": "https://www.npmjs.com/package/@visx/shape",
+          "updated": "2026-06-11T21:39:08.829Z",
+          "monthly": 47211949,
+          "weekly": 10819274
+        },
+        {
           "name": "@visx/vendor",
           "version": "4.0.0",
           "description": "vendored packages for visx",
           "url": "https://www.npmjs.com/package/@visx/vendor",
           "updated": "2026-06-11T21:36:51.615Z",
-          "monthly": 47162065,
-          "weekly": 11166898
+          "monthly": 47127261,
+          "weekly": 10810953
         },
         {
           "name": "@visx/point",
@@ -639,8 +639,8 @@
           "description": "visx point",
           "url": "https://www.npmjs.com/package/@visx/point",
           "updated": "2026-06-11T21:36:24.499Z",
-          "monthly": 45707577,
-          "weekly": 10861018
+          "monthly": 45698428,
+          "weekly": 10518363
         },
         {
           "name": "@visx/responsive",
@@ -648,8 +648,8 @@
           "description": "visx responsive svg",
           "url": "https://www.npmjs.com/package/@visx/responsive",
           "updated": "2026-06-11T21:36:32.730Z",
-          "monthly": 41808308,
-          "weekly": 10305835
+          "monthly": 42006094,
+          "weekly": 10135570
         },
         {
           "name": "@visx/event",
@@ -666,8 +666,8 @@
           "description": "visx grid",
           "url": "https://www.npmjs.com/package/@visx/grid",
           "updated": "2026-06-11T21:39:50.211Z",
-          "monthly": 40702958,
-          "weekly": 10005688
+          "monthly": 40903348,
+          "weekly": 9599086
         },
         {
           "name": "ag-charts-types",
@@ -684,8 +684,8 @@
           "description": "JavaScript charting framework",
           "url": "https://www.npmjs.com/package/highcharts",
           "updated": "2026-09-20T12:53:02.677Z",
-          "monthly": 15563471,
-          "weekly": 3708522
+          "monthly": 15566843,
+          "weekly": 3587229
         },
         {
           "name": "apexcharts",
@@ -693,8 +693,8 @@
           "description": "A JavaScript Chart Library",
           "url": "https://www.npmjs.com/package/apexcharts",
           "updated": "2026-11-18T17:22:37.291Z",
-          "monthly": 12257575,
-          "weekly": 2884926
+          "monthly": 12209456,
+          "weekly": 2769194
         },
         {
           "name": "ag-charts-community",
@@ -702,8 +702,8 @@
           "description": "Advanced Charting / Charts supporting Javascript / Typescript / React / Angular / Vue",
           "url": "https://www.npmjs.com/package/ag-charts-community",
           "updated": "2026-11-04T08:40:51.581Z",
-          "monthly": 11470904,
-          "weekly": 2572731
+          "monthly": 11465057,
+          "weekly": 2520437
         },
         {
           "name": "ag-charts-core",
@@ -711,8 +711,8 @@
           "description": "Advanced Charting / Charts supporting Javascript / Typescript / React / Angular / Vue",
           "url": "https://www.npmjs.com/package/ag-charts-core",
           "updated": "2026-11-04T08:42:26.227Z",
-          "monthly": 9772972,
-          "weekly": 2192213
+          "monthly": 9696034,
+          "weekly": 2071006
         }
       ]
     },
@@ -773,8 +773,8 @@
           "description": "Core LangChain.js abstractions and schemas",
           "url": "https://www.npmjs.com/package/@langchain/core",
           "updated": "2026-11-24T03:51:37.229Z",
-          "monthly": 36845271,
-          "weekly": 8653884
+          "monthly": 36825901,
+          "weekly": 8248141
         },
         {
           "name": "@earendil-works/pi-coding-agent",
@@ -782,8 +782,8 @@
           "description": "Coding agent CLI with read, bash, edit, write tools and session management",
           "url": "https://www.npmjs.com/package/@earendil-works/pi-coding-agent",
           "updated": "2026-11-25T13:41:09.982Z",
-          "monthly": 28049992,
-          "weekly": 7494662
+          "monthly": 28262977,
+          "weekly": 7470639
         },
         {
           "name": "@langchain/openai",
@@ -791,8 +791,8 @@
           "description": "OpenAI integrations for LangChain.js",
           "url": "https://www.npmjs.com/package/@langchain/openai",
           "updated": "2026-11-20T18:54:14.213Z",
-          "monthly": 22040060,
-          "weekly": 5142161
+          "monthly": 21925846,
+          "weekly": 4839595
         },
         {
           "name": "@tanstack/ai",
@@ -804,22 +804,31 @@
           "weekly": 4289527
         },
         {
-          "name": "langchain",
-          "version": "1.6.8",
-          "description": "Typescript bindings for langchain",
-          "url": "https://www.npmjs.com/package/langchain",
-          "updated": "2026-11-24T03:50:43.780Z",
-          "monthly": 17660428,
-          "weekly": 4056955
-        },
-        {
           "name": "assistant-stream",
           "version": "0.3.59",
           "description": "Streaming utilities for AI assistants",
           "url": "https://www.npmjs.com/package/assistant-stream",
           "updated": "2026-11-22T18:53:47.709Z",
-          "monthly": 15431820,
-          "weekly": 3921890
+          "monthly": 15625455,
+          "weekly": 3826016
+        },
+        {
+          "name": "langchain",
+          "version": "1.6.8",
+          "description": "Typescript bindings for langchain",
+          "url": "https://www.npmjs.com/package/langchain",
+          "updated": "2026-11-24T03:50:43.780Z",
+          "monthly": 17506005,
+          "weekly": 3767910
+        },
+        {
+          "name": "hyparquet",
+          "version": "1.33.2",
+          "description": "Parquet file parser for JavaScript",
+          "url": "https://www.npmjs.com/package/hyparquet",
+          "updated": "2026-11-24T19:16:39.543Z",
+          "monthly": 14559435,
+          "weekly": 3675339
         },
         {
           "name": "@mastra/core",
@@ -827,8 +836,8 @@
           "description": "Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
           "url": "https://www.npmjs.com/package/@mastra/core",
           "updated": "2026-11-25T01:14:08.758Z",
-          "monthly": 14719426,
-          "weekly": 3741971
+          "monthly": 14831155,
+          "weekly": 3368435
         },
         {
           "name": "html-minifier",
@@ -840,22 +849,13 @@
           "weekly": 3184478
         },
         {
-          "name": "@toon-format/toon",
-          "version": "4.4.0",
-          "description": "Token-Oriented Object Notation (TOON) – compact, human-readable serialization of JSON data for LLM prompts",
-          "url": "https://www.npmjs.com/package/@toon-format/toon",
-          "updated": "2026-10-08T20:34:12.227Z",
-          "monthly": 11671696,
-          "weekly": 2762178
-        },
-        {
           "name": "@promptbook/utils",
           "version": "0.114.0-50",
           "description": "Promptbook: Create persistent AI agents that turn your company's scattered knowledge into action",
           "url": "https://www.npmjs.com/package/@promptbook/utils",
           "updated": "2026-10-06T21:05:31.567Z",
-          "monthly": 10516053,
-          "weekly": 2326486
+          "monthly": 10463634,
+          "weekly": 2202981
         }
       ]
     }
